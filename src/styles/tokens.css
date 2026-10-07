@@ -1,0 +1,80 @@
+:root {
+  /* Palette: raw values live here; components use semantic tokens below. */
+  --palette-black: #080707;
+  --palette-charcoal: #18100d;
+  --palette-maroon: #591717;
+  --palette-vermilion: #8e2020;
+  --palette-gold: #c89b3c;
+  --palette-gold-light: #e8c76a;
+  --palette-ivory: #f6ebd8;
+  --palette-brown: #352018;
+
+  --color-canvas: var(--palette-black);
+  --color-canvas-raised: var(--palette-charcoal);
+  --color-surface: color-mix(in srgb, var(--palette-charcoal) 88%, var(--palette-black));
+  --color-surface-raised: color-mix(in srgb, var(--palette-brown) 66%, var(--palette-charcoal));
+  --color-text: var(--palette-ivory);
+  --color-text-muted: color-mix(in srgb, var(--palette-ivory) 69%, var(--palette-brown));
+  --color-text-subtle: color-mix(in srgb, var(--palette-ivory) 48%, var(--palette-brown));
+  --color-accent: var(--palette-gold);
+  --color-accent-strong: var(--palette-gold-light);
+  --color-devotion: var(--palette-vermilion);
+  --color-line: color-mix(in srgb, var(--palette-ivory) 14%, transparent);
+  --color-line-strong: color-mix(in srgb, var(--palette-gold) 38%, transparent);
+  --color-focus: var(--palette-gold-light);
+
+  --font-display: var(--font-cormorant), "Iowan Old Style", "Baskerville", Georgia, serif;
+  --font-bengali: var(--font-bengali-serif), "Noto Serif Bengali", "Nirmala UI", serif;
+  --font-sans: var(--font-manrope), Inter, ui-sans-serif, system-ui, sans-serif;
+
+  --text-display: clamp(3.25rem, 8.2vw, 8.75rem);
+  --text-hero: clamp(2.85rem, 6vw, 6.35rem);
+  --text-section: clamp(2.15rem, 4vw, 4.5rem);
+  --text-title: clamp(1.3rem, 1.8vw, 1.75rem);
+  --text-body: clamp(0.98rem, 0.3vw + 0.92rem, 1.125rem);
+  --text-ui: 0.8125rem;
+  --text-label: 0.6875rem;
+  --text-countdown: clamp(2.2rem, 4.5vw, 4.75rem);
+
+  --leading-display: 0.89;
+  --leading-heading: 0.99;
+  --leading-body: 1.72;
+  --leading-bengali: 1.25;
+  --tracking-display: -0.055em;
+  --tracking-heading: -0.035em;
+  --tracking-label: 0.19em;
+  --tracking-ui: 0.02em;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --space-section: clamp(5.5rem, 10vw, 10.5rem);
+  --space-section-tight: clamp(4rem, 7vw, 7rem);
+
+  --container-width: 90rem;
+  --page-gutter: clamp(1.25rem, 3vw, 3.75rem);
+  --header-height: 4.5rem;
+
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --radius-pill: 999px;
+
+  --shadow-ambient: 0 2rem 7rem rgb(0 0 0 / 32%);
+  --shadow-surface: 0 1rem 3.5rem rgb(0 0 0 / 28%), inset 0 1px rgb(255 255 255 / 4%);
+  --shadow-button: 0 0.75rem 2rem color-mix(in srgb, var(--palette-maroon) 34%, transparent);
+  --glow-soft: 0 0 3.5rem color-mix(in srgb, var(--palette-gold) 13%, transparent);
+  --glow-devotion: 0 0 5rem color-mix(in srgb, var(--palette-vermilion) 20%, transparent);
+
+  --transition-fast: 150ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-base: 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
